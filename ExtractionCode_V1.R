@@ -26,11 +26,11 @@ r_stats2 <- searchTwitter("#Trump", n=15000)
 #[Testing] using search and db to test if extraction can be uploaded to a database
 
 #should get 1500
-length(r_stats2)
+length(r_stats)
 #[1] 1500
 
 #save text
-r_stats_text <- sapply(r_stats2, function(x) x$getText())
+r_stats_text <- sapply(r_stats, function(x) x$getText())
 
 #create corpus
 r_stats_text_corpus <- Corpus(VectorSource(r_stats_text))
