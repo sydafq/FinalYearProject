@@ -21,7 +21,7 @@ setup_twitter_oauth(conskey,conssecret,apitoken,apisecret)
 options(httr_oauth_cache=origop)
 
 #the cainfo parameter is necessary only on Windows
-r_stats2 <- searchTwitter("#Trump", n=15000)
+r_stats <- searchTwitter("#Trump", n=15000)
 
 #[Testing] using search and db to test if extraction can be uploaded to a database
 
