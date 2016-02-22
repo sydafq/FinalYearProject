@@ -22,7 +22,7 @@ setup_twitter_oauth(conskey,conssecret,apitoken,apisecret)
 options(httr_oauth_cache=origop)
 
 #registers the backend database of where the tweets are redirected to
-register_sqlite_backend("StreamData")
+register_sqlite_backend("NeutralTrainingSet")
 
 #starts query and searches
-search_twitter_and_store("#Trump",table_name = "tweets")
+search_twitter_and_store("#Neutral",table_name = "tweets")
